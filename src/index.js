@@ -1,17 +1,48 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {createRoot} from 'react-dom/client';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const container1 = document.querySelector('#root');
+const root = createRoot(container1);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Header(){
+  return (
+    <header>
+      <nav>
+        <img src="logo512.png" width="30px" />
+      </nav>
+    </header>
+  );
+}
+
+function Footer(){
+  return (
+    <footer>
+      <small>© 2022 Bigrocks development. All rights reserved.</small>
+    </footer>
+  );
+}
+
+function MainContent(){
+  return (
+    <>
+      <h1>Some jokes</h1>
+      <ol>
+        <li>Now I am getting affinity about react.</li>
+        <li>It's a little bit interesting</li>
+        <li>Quite boring but someday I would master it.</li>
+      </ol>
+    </>
+  );
+}
+
+function Page() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+root.render(<Page />);

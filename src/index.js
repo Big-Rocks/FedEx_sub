@@ -1,8 +1,8 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
-import Header from "./Header"
-import Footer from "./Footer"
-import MainContent from "./MainContent"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import MainContent from "./components/MainContent"
 import "./index.css"
 
 const container1 = document.querySelector('#root');

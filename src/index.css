@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: #222;
 }
 
 code {
@@ -20,6 +22,8 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 5px 5px rgba(0,0,40,0.2);
+  background-color: #111;
 }
 
 .nav-items > li{
@@ -28,4 +32,22 @@ code {
 
 .nav-logo {
   width: 30px;
+  padding-left: 15px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #111;
+  padding: 5px;
+}
+
+.main_content {
+  padding: 20px; 
+}
+
+.logo_char {
+  font-size: 2em;
+  color: #4DA9C2;
 }
